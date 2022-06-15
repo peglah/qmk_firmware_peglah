@@ -371,12 +371,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
         case BS_WRD:
             if (record->event.pressed) {
-                register_mods(mod_config(MOD_LCTL));
-                register_mods(mod_config(MOD_LSFT));
-                tap_code(KC_LEFT);
-                unregister_mods(mod_config(MOD_LSFT));
-                unregister_mods(mod_config(MOD_LCTL));
-                tap_code(KC_BSPC);
+//                register_mods(mod_config(MOD_LCTL));
+//                register_mods(mod_config(MOD_LSFT));
+//                tap_code(KC_LEFT);
+//                unregister_mods(mod_config(MOD_LSFT));
+//                unregister_mods(mod_config(MOD_LCTL));
+//                tap_code(KC_BSPC);
+
+                  SEND_STRING(SS_LSFT(X_BSPC));
             }
             return false;
     }
