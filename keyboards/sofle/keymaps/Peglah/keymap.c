@@ -378,7 +378,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 //                unregister_mods(mod_config(MOD_LCTL));
 //                tap_code(KC_BSPC);
 
-                  SEND_STRING(SS_LSFT(X_BSPC));
+                  SEND_STRING(SS_DOWN(X_LCTRL) SS_TAP(X_BSPC) SS_UP(X_LCTRL));
             }
             return false;
     }
