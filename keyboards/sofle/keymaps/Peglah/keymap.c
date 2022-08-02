@@ -20,7 +20,7 @@ enum custom_keycodes {
     KC_LSTRT,
     KC_LEND,
     KC_DLINE,
-    KC_DLWRD = SAFE_RANGE
+    KC_DLWRD
 };
 
 
