@@ -382,17 +382,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case SFT_T(KC_ESC):
-            return TAPPING_TERM + 100;
-//        case LT(1, KC_GRV):
-//            return 130;
-        default:
-            return TAPPING_TERM;
-    }
-}
-
 #ifdef ENCODER_ENABLE
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
