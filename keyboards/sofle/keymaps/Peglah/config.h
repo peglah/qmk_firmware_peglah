@@ -8,3 +8,5 @@ for more options.
 // Activate Caps Word by pressing Left Shift + Right Shift
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
+// Dual-role key will perform its hold action when tapping another key
+#define PERMISSIVE_HOLD
